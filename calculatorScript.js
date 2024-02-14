@@ -1,4 +1,4 @@
-function test(){
-    console.log("Hello world");
-    document.write(5 + 6);
-}
+function test(number){
+    document.getElementById("result").innerTMLL = "number";
+    console.log(number);
+}}
