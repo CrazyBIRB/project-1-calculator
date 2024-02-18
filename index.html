@@ -1,36 +1,32 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <script src="calculatorScript.js"></script>
-        
-    </head>
+<head>
+    <script src="calculatorScript.js"></script>
+    <link rel="stylesheet" href="calculatorStyle.css">
+</head>
 
-    <body>
-        <center> 
-        <h1> -- Calculator Project -- </h1>
-        <p>In work...</p>
-        <p>Result: <a id="result"></a> </p>
-        <button id='9' onclick="writeNumber(9)">9</button>
-        <button id='8' onclick="writeNumber(8)">8</button>
-        <button id='7' onclick="writeNumber(7)">7</button>
-        <br>
-        <button id='6' onclick="writeNumber(6)">6</button>
-        <button id='5' onclick="writeNumber(5)">5</button>
-        <button id='4' onclick="writeNumber(4)">4</button>
-        <br>
-        <button id='3' onclick="writeNumber(3)">3</button>
-        <button id='2' onclick="writeNumber(2)">2</button>
-        <button id='1' onclick="writeNumber(1)">1</button>
-        <br>
-        <button id='0' onclick="writeNumber(0)">0</button>
-        <br>
-        <button id='plus' onclick="operation(0)">+</button>
-        <button id='minus' onclick="operation(1)">-</button>
-        <button id='=' onclick="showResult()">=</button>
-        <br>
-        <button id='delete' onclick="clearResult(0)">Delete</button>
-        <button id='clear' onclick="clearResult(1)">Clear</button>
-        </center>
-        
-    </body>
+<body>
+<center> 
+    <h1> -- Calculator Project -- </h1>
+    <p>In work...</p>
+</center>
+<div id="calculatorUI">
+    <div id="resultBox">Result: <a id="result"></a> </div>
+    <div><button class="buttons" id='nine' onclick="writeNumber(9)">9</button></div>
+    <div><button class="buttons" id='eight' onclick="writeNumber(8)">8</button></div>
+    <div><button class="buttons" id='seven' onclick="writeNumber(7)">7</button></div>
+    <div><button class="buttons" id='six' onclick="writeNumber(6)">6</button></div>
+    <div><button class="buttons" id='five' onclick="writeNumber(5)">5</button></div>
+    <div><button class="buttons" id='four' onclick="writeNumber(4)">4</button></div>
+    <div><button class="buttons" id='three' onclick="writeNumber(3)">3</button></div>
+    <div><button class="buttons" id='two' onclick="writeNumber(2)">2</button></div>
+    <div><button class="buttons" id='one' onclick="writeNumber(1)">1</button></div>
+    <div><button class="buttons" id='zero' onclick="writeNumber(0)">0</button></div>
+    <div><button class="buttons" id='plus' onclick="operation(0)">+</button></div>
+    <div><button class="buttons" id='minus' onclick="operation(1)">-</button></div>
+    <div><button class="buttons" id='equals' onclick="showResult()">=</button></div>
+    <div><button class="buttons" id='delete' onclick="clearResult(0)">Delete</button></div>
+    <div><button class="buttons" id='clear' onclick="clearResult(1)">Clear</button></div>
+</div>
+</body>
 </html>
