@@ -25,19 +25,16 @@ function operation(option){
     }
 }
 
-function clear(option){
-    console.log("teste1");
+function clearResult(option){
     if(numbers.length == 0) return;
-    else if(option == 0){ 
+    else if(option == 0){ // Option 0 => Delete
         numbers.pop();
-        for(let i = 0; i < numbers.length; i++){
-            let str = document.getElementById("result").innerHTML; 
-            document.getElementById("result").innerHTML = str.substring(0, str.length - 1);
-        }
+        let str = document.getElementById("result").innerHTML; 
+        document.getElementById("result").innerHTML = str.substring(0, str.length - 1);   
     }
     else{
         while(numbers.length != 0) numbers.pop();
-        document.getElementbyId("result").innerHTML = "";
+        document.getElementById("result").innerHTML = "";
     } 
     console.log(numbers);
 }
